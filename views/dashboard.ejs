@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord</title>
+</head>
+<body>
+    <h1>Bienvenue, <%= user.firstName %></h1>
+    <form action="/start-timer" method="POST">
+        <input type="number" name="duration" placeholder="Durée en minutes" required>
+        <button type="submit">Démarrer le minuteur</button>
+    </form>
+</body>
+</html>
